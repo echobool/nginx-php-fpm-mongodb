@@ -1,7 +1,10 @@
 # nginx-php-fpm-mongodb
+
 ###### 增加 php-fpm mongodb 驱动。
+
 ##用法：
-#####编辑 Dockerfile
+
+####编辑 Dockerfile
     
     FROM echobool/nginx-php-fpm-mongodb
     
@@ -10,6 +13,6 @@
     COPY . /var/www/html
 
 
-#####其它环境变量用法参考
+####其它环境变量用法参考
         
         https://github.com/richarvey/nginx-php-fpm

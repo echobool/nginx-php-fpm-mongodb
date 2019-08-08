@@ -1,0 +1,6 @@
+FROM richarvey/nginx-php-fpm
+RUN apk add --no-cache --virtual .build-deps \
+    autoconf gcc libc-dev make && \
+    pecl install mongodb && \
+    docker-php-ext-enable mongodb && \
+    apk del m4 gmp binutils isl libgomp libatomic mpfr3 mpc1 musl-dev autoconf gcc libc-dev make
